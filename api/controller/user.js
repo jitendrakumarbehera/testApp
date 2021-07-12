@@ -15,7 +15,7 @@ exports.create_user = (req,res,next)=>{
     if(req.file){
         imagename = req.file.path;
     }else{
-        imagename = 'upload/amazon_default.png';  
+        imagename = 'upload/user_default.png';  
     }
     User.find({email:req.body.email})
     .exec()
